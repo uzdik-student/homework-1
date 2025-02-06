@@ -1,0 +1,13 @@
+@startmindmap
+skin rose
+title mindmap diagram
+
+* All tests
+** Test deposit
+***[#lightgreen] Before test balance = 100 bitcoins\nUser depositing 50 bitcoins\nBalance should become 150 bitcoins
+** Test withdraw
+*** Withdraw sufficient funds
+****[#lightgreen] Before test balance = 100 bitcoins\nUser withdrawing 30 bitcoins\nBalance should become 70 bitcoins
+*** Withdraw insufficient funds
+****[#lightgreen] Before test balance = 100 bitcoins\nUser withdrawing 200 bitcoins\nException should be thrown\nBalance should remain 100 bitcoins
+@endmindmap

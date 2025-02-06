@@ -1,29 +1,29 @@
-package kz.edu.nu.fintech;
+package kz.edu.nu.arman.fintech;
 
 /**
  * @author Arman Sydikov
  */
 public class Wallet {
 
-    private Integer bitcoin;
+    private Integer bitcoins;
 
-    public Wallet(Integer bitcoin) {
-        this.bitcoin = bitcoin;
+    public Wallet(Integer bitcoins) {
+        this.bitcoins = bitcoins;
     }
 
     public void deposit(Integer amount) {
-        bitcoin += amount;
+        bitcoins += amount;
     }
 
     public Integer balance() {
-        return bitcoin;
+        return bitcoins;
     }
 
     public void withdraw(Integer amount) {
-        if (amount > bitcoin) {
+        if (amount > bitcoins) {
             throw new IllegalArgumentException("Insufficient funds");
         }
 
-        bitcoin -= amount;
+        bitcoins -= amount;
     }
 }
