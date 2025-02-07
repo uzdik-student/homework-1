@@ -1,0 +1,13 @@
+@startuml
+skin rose
+title UML class diagram
+class Student {
+  - String studentId
+  - String name
+  - List<Double> grades
+  + void addGrade()
+  + double calculateGPA()
+  + boolean hasPassed()
+  + List<Double> getGrades()
+}
+@enduml
