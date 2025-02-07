@@ -1,0 +1,12 @@
+@startuml
+skin rose
+title UML class diagram
+class BankAccount {
+  - String accountNumber
+  - double balance
+  + void deposit(amount)
+  + void withdraw(amount)
+  + double getBalance()
+  + boolean hasSufficientFunds()
+}
+@enduml
